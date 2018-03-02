@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous">
-  <title>Pushing Children</title>
+  <title>Train Scheduler</title>
 </head>
 
 <body>
@@ -15,70 +15,63 @@
   <div class="container">
     <!-- Header -->
     <div class="jumbotron">
-      <h1>Employee Data Management</h1>
-      <h2>A Comprehensive Directory of Employee Billable Hours</h2>
+      <h1>Anytime is Train Time</h1>
+      <h3>Choo. Choo. Chee. Chee.</h3>
     </div>
 
     <!-- Current Employees -->
     <div class="card">
       <div class="card-header">
-        Current Employees
+        Current Train Schedule
       </div>
-      <div class="card-block" id="current-employees">
+      <div class="card-block" id="current train schedule">
         <div class="row">
           <div class="col-md-2">
-            <p>Employee</p>
+            <p>Train Name</p>
           </div>
           <div class="col-md-2">
-            <p>Role</p>
+            <p>Destination</p>
           </div>
           <div class="col-md-2">
-            <p>Start Date</p>
+            <p>Frequency (min)</p>
           </div>
           <div class="col-md-2">
-            <p>Months Worked</p>
+            <p>Next Arrival</p>
           </div>
           <div class="col-md-2">
-            <p>Monthly Rate ($)</p>
+            <p>Minutes Away</p>
           </div>
           <div class="col-md-2">
-            <p>Total Billed</p>
+            <p></p>
           </div>
         </div>
         <hr>
-        <!-- <div class="row">
-          <div class="col-md-2" id="name-field"></div>
-          <div class="col-md-2" id="role-field"></div>
-          <div class="col-md-2" id="start-field"></div>
-          <div class="col-md-2" id="months-field"></div>
-          <div class="col-md-2" id="rate-field"></div>
-          <div class="col-md-2" id="total-field"></div>
-        </div> -->
+
       </div>
     </div>
     <br>
 
-    <!-- Add Employee -->
+    <!-- Add Train -->
     <div class="card">
       <div class="card-header">
-        Add Employee
+        Add Train
       </div>
       <div class="card-block">
         <form>
           <div class="form-group">
-            <label>Employee Name</label>
-            <input class="form-control" id="employee-name">
+            <label>Train Name</label>
+            <input class="form-control" id="traom-name">
           </div>
           <div class="form-group">
-            <label>Role</label>
-            <input class="form-control" id="employee-role">
+            <label>Destination</label>
+            <input class="form-control" id="destination">
           </div>
           <div class="form-group">
-            <label>Hire Date</label>
-            <input class="form-control" id="hire-date">
+            <label>First Train Time (HH:MM - military time)</label>
+            <input class="form-control" id="first-train-time">
           </div>
           <div class="form-group">
-            <label>Monthly Rate</label>
+            <label>Frequency (min)</label>
             <input class="form-control" id="monthly-rate">
           </div>
           <button type="submit" class="btn submitBTN">Submit</button>
